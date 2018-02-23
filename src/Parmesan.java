@@ -1,23 +1,24 @@
 
-public class Mushroom extends ToppingDecorator {
+public class Parmesan extends ToppingDecorator {
 
-	public Mushroom(Pizza newPizza) {
+	public Parmesan(Pizza newPizza) {
 		super(newPizza);
 		// TODO Auto-generated constructor stub
 		
-		System.out.println("Adding mushroom");
+		System.out.println("Adding Parmesan");
 	}
 	
 	@Override
 	public String getDescription() {
 		// TODO Auto-generated method stub
-		return super.getDescription() + ", Mushroom";
+		return tempPizza.getDescription() + ", Parmesan";
 	}
 	
 	@Override
 	public double getCost() {
 		// TODO Auto-generated method stub
-		return super.getCost() + .75;
+		return tempPizza.getCost() + 1.00;
 	}
+	
 
 }
